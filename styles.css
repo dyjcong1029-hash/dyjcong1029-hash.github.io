@@ -139,6 +139,11 @@ p {
   padding-left: 0.2rem;
 }
 
+.course-note .note {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .dated-list article {
   display: grid;
   gap: 1.25rem;
@@ -170,6 +175,15 @@ p {
   gap: 1.25rem;
   grid-template-columns: 145px minmax(0, 1fr) 110px;
   margin-bottom: 1.65rem;
+}
+
+.talk-list .talk-entry-wide {
+  grid-template-columns: 145px minmax(0, 1fr);
+}
+
+.talk-list .talk-abstract {
+  line-height: 1.65;
+  margin-top: 0.65rem;
 }
 
 .poster-link {
@@ -247,7 +261,8 @@ footer {
   }
 
   .dated-list article,
-  .talk-list article {
+  .talk-list article,
+  .talk-list .talk-entry-wide {
     gap: 0.25rem;
     grid-template-columns: 1fr;
   }
